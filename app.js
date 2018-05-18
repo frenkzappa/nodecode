@@ -14,14 +14,16 @@ runGetRequest();
 function runGetRequest() {
     
     //sample URL.
-    var url = "http://129.157.179.180:3000/shield/33/45/blue/frenkzappa";
-    request(url, function(error, response, body) {
-        if(!error) {
-            console.log(body);
-        } else {
-            console.log(error);
-        }
-    });
+    for (var i = 0 ; i < 10; i++){
+        var url = "http://129.157.179.180:3000/shield/33/"+i+"/blue/frenkzappa";
+        request(url, function(error, response, body) {
+            if(!error) {
+                console.log(body);
+            } else {
+                console.log(error);
+            }
+        });
+}
 };
 
 //Executes a SQL query
