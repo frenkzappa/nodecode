@@ -8,15 +8,15 @@ var app = express();
 app.use(express.static('public'));
 console.log('Exact name: ' + process.env.ORA_INSTANCE_NAME);
 //for (var i = 0 ; i < 10; i++){
-//    runGetRequest(i);
+    runGetRequest();
 //    console.log(i);
 //}
-runDatabaseQuery();
+//runDatabaseQuery();
 
 // Does a GET request to ip.jsontest.com
 
-    function runGetRequest(i) {    
-        var url = "http://129.157.179.180:3000/fighters/45/"+i+"/blue/frenkzappa";
+    function runGetRequest() {    
+        var url = "http://129.157.179.180:3000/fighters/320/650/blue/frenkzappa";
         request(url, function(error, response, body) {
             if(!error) {
                 console.log(body);
