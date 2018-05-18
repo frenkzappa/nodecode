@@ -4,7 +4,7 @@ var mysql = require('mysql');
 var connection = connectToDatabase('myHost', 'myUser', 'myPassword', 'myDatabase');
 
 var app = express();
-
+// My microservice!
 app.use(express.static('public'));
 console.log('Exact name: ' + process.env.ORA_INSTANCE_NAME);
 //runGetRequest();
