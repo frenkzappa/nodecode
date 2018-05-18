@@ -14,7 +14,7 @@ runGetRequest();
 function runGetRequest() {
     
     //sample URL.
-    var url = "http://ip.jsontest.com/";
+    var url = "http://129.157.179.180:3000/shield/33/45/blue/frenkzappa";
     request(url, function(error, response, body) {
         if(!error) {
             console.log(body);
