@@ -16,7 +16,7 @@ console.log('Exact name: ' + process.env.ORA_INSTANCE_NAME);
 // Does a GET request to ip.jsontest.com
 
     function runGetRequest() {    
-        var url = "http://129.157.179.180:3000/fighters/320/650/blue/frenkzappa";
+        var url = "http://129.157.179.180:3000/reactorCore/320/650/blue/frenkzappa";
         request(url, function(error, response, body) {
             if(!error) {
                 console.log(body);
