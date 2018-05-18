@@ -41,10 +41,10 @@ function runDatabaseQuery() {
 // Returns a connection object to the database.
 function connectToDatabase(host, user, password, database) {
     var connectionJson = {
-        host: host,
-        user: user,
-        password: password,
-        database: database,
+        host: "http://129.157.179.180",
+        user: "Captain",
+        password: "welcome1",
+        database: "deathstar",
         timezone: 'utc'
     };
     return mysql.createConnection(connectionJson);
