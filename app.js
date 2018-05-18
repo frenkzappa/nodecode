@@ -7,7 +7,7 @@ var app = express();
 // My microservice!
 app.use(express.static('public'));
 console.log('Exact name: ' + process.env.ORA_INSTANCE_NAME);
-//runGetRequest();
+runGetRequest();
 //runDatabaseQuery();
 
 // Does a GET request to ip.jsontest.com
