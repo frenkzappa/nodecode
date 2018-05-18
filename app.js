@@ -1,7 +1,7 @@
 var express = require('express');
 var request = require('request');
 var mysql = require('mysql');
-var connection = connectToDatabase('myHost', 'myUser', 'myPassword', 'myDatabase');
+var connection = connectToDatabase('http://129.157.179.180', 'Captain', 'welcome1', 'deathstar');
 var i = 0;
 var app = express();
 // My microservice!
@@ -41,10 +41,10 @@ function runDatabaseQuery() {
 // Returns a connection object to the database.
 function connectToDatabase(host, user, password, database) {
     var connectionJson = {
-        host: "http://129.157.179.180",
-        user: "Captain",
-        password: "welcome1",
-        database: "deathstar",
+        host: host,
+        user: user,
+        password: password,
+        database: database,
         timezone: 'utc'
     };
     return mysql.createConnection(connectionJson);
