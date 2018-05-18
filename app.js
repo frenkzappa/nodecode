@@ -1,16 +1,16 @@
 var express = require('express');
 var request = require('request');
 var mysql = require('mysql');
-var connection = connectToDatabase('http://129.157.179.180', 'Captain', 'welcome1', 'deathstar');
+var connection = connectToDatabase('129.157.179.180', 'Captain', 'welcome1', 'deathstar');
 var i = 0;
 var app = express();
 // My microservice!
 app.use(express.static('public'));
 console.log('Exact name: ' + process.env.ORA_INSTANCE_NAME);
-for (var i = 0 ; i < 10; i++){
-    runGetRequest(i);
-    console.log(i);
-}
+//for (var i = 0 ; i < 10; i++){
+//    runGetRequest(i);
+//    console.log(i);
+//}
 runDatabaseQuery();
 
 // Does a GET request to ip.jsontest.com
