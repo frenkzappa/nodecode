@@ -11,7 +11,7 @@ for (var i = 0 ; i < 10; i++){
     runGetRequest(i);
     console.log(i);
 }
-//runDatabaseQuery();
+runDatabaseQuery();
 
 // Does a GET request to ip.jsontest.com
 
