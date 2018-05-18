@@ -9,6 +9,7 @@ app.use(express.static('public'));
 console.log('Exact name: ' + process.env.ORA_INSTANCE_NAME);
 for (var i = 0 ; i < 10; i++){
     runGetRequest(i);
+    console.log(i);
 }
 //runDatabaseQuery();
 
